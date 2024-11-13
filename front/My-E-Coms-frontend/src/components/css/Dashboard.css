@@ -1,0 +1,129 @@
+/* Dashboard layout */
+.dashboard-container {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #FF6B6B, #FFB6B6); /* Set gradient background */
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  color: #333;
+}
+
+.add-product-header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-product-button {
+  background-color: #FF6B6B;
+  padding: 12px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.add-product-button i {
+  margin-right: 8px;
+}
+
+.add-product-button:hover {
+  background-color: #FF4C4C;
+}
+
+.header-search {
+  margin-bottom: 2rem;
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+  padding: 20px;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2.5rem; /* Increased padding for a more spacious feel */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px; /* Increased max-width */
+  min-width: 450px; /* Increased min-width */
+  max-height: 80vh;
+  overflow-y: auto; /* Makes content scrollable */
+  transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-content {
+  /* Removed transform: scale(0.8); */
+  /* transform: scale(1); Removed as it's no longer needed */
+}
+
+.modal-title {
+  font-size: 2rem; /* Increased font size */
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.close {
+  background-color: #FF6B6B;
+  color: white;
+  padding: 12px 25px; /* Increased padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.close:hover {
+  background-color: #FF4C4C;
+}
+
+/* Delete button styling */
+.delete-button {
+  background-color: #FF6B6B;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.delete-button i {
+  margin-right: 8px;
+}
+
+.delete-button:hover {
+  background-color: #FF4C4C;
+}
+
+.delete-button:focus {
+  outline: none;
+}

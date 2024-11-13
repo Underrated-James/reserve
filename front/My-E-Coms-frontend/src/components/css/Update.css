@@ -1,0 +1,121 @@
+/* Update Modal Design */
+.UpdateForm {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .UpdateForm h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .UpdateForm label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .UpdateForm input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .UpdateForm input:focus {
+    border-color: #FF6B6B;
+    outline: none;
+  }
+  
+  .UpdateForm button {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .UpdateForm button:hover {
+    background-color: #FF4C4C;
+  }
+  
+  /* Cancel button */
+  .cancel-btn {
+    background-color: #ccc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #999;
+  }
+  
+  /* Confirmation Modal */
+  .ConfirmationModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .ConfirmationModalContent {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .confirm-btn, .cancel-btn {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 48%;
+  }
+  
+  .confirm-btn:hover, .cancel-btn:hover {
+    background-color: #FF4C4C;
+  }
+  
+  .confirm-btn {
+    background-color: #4CAF50; /* Green for Yes */
+  }
+  
+  .cancel-btn {
+    background-color: #FF6B6B; /* Red for No */
+  }
+  
